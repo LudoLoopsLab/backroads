@@ -5,10 +5,7 @@ h1 {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/* */
-.navbar-links {
-  color: green;
-}
-.footer-links {
-  color: orange;
+
+.links {
+  color: red;
 }
