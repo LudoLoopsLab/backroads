@@ -5,12 +5,12 @@ import { FaAlignRight } from "react-icons/fa"
 import links from "../constants/links"
 import socialIcons from "../constants/social-icons"
 import logo from "../images/logo.svg"
-
 const Navbar = () => {
   const [isOpen, setNav] = useState(false)
   const toggleNav = () => {
     setNav(isOpen => !isOpen)
   }
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
@@ -35,6 +35,20 @@ const Navbar = () => {
             )
           })}
         </ul>
+        <div className={styles.navSocialLinks}>
+          {socialIcons.map((item, index) => {
+            return (
+              <a
+                key={index}
+                href={item.url}
+                // target="_blank"
+                // rel="noopener, noreferrer"
+              >
+                {item.icon}
+              </a>
+            )
+          })}
+        </div>
       </div>
     </nav>
   )
