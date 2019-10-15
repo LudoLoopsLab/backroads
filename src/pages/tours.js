@@ -6,7 +6,7 @@ export default class tours extends Component {
     return (
       <Layout>
         hello from tours page !!!!
-        <div>bonjour</div>
+        <div>bonjour a tous</div>
       </Layout>
     )
   }
