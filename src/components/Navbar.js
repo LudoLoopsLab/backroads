@@ -42,7 +42,7 @@ const Navbar = () => {
                 key={index}
                 href={item.url}
                 target="_blank"
-                rel="noopener, noreferrer"
+                rel="noopener noreferrer"
               >
                 {item.icon}
               </a>
